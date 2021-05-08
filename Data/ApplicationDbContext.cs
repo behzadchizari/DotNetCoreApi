@@ -1,5 +1,6 @@
 ﻿using Common.Utilities;
 using Entities;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
 using System.Reflection;
@@ -8,7 +9,8 @@ using System.Threading.Tasks;
 
 namespace Data
 {
-    public class ApplicationDbContext : DbContext
+    public class ApplicationDbContext : IdentityDbContext<User, Role, int>
+        //DbContext
     {
         public ApplicationDbContext(DbContextOptions options)
             : base(options)
