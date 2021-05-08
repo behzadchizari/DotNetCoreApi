@@ -18,3 +18,5 @@ n-Layer Arch
 NLog
 ## UI: 
 Swagger UI
+### Demo:
+<img src="SC.jpg">
